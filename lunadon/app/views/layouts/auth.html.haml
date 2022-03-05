@@ -1,0 +1,34 @@
+- content_for :header_tags do
+  = javascript_pack_tag 'public', crossorigin: 'anonymous'
+
+- content_for :content do
+  .container-alt
+    .windowContainer
+      .windowHeaderContainer
+        %img{ src: '/alt/windowHeaderLeftBorder.png' }
+        .windowHeader
+          .windowFaviconContainer
+            %img 
+          .windowTitleContainer
+            %h1.windowTitle Login
+          .windowSpacing
+          .verticalAlign
+            .minimizeButton
+          .verticalAlign
+            .maximizeButton
+          .verticalAlign
+            .closeButton
+        %img{ src: '/alt/windowHeaderRightBorder.png' }
+      .windowBody
+        .mastodonContent
+          .logo-container
+            %h1
+              %a{ href: '/' }
+                %img#headerLogoAlt{ src: '/alt/lunadon.svg' }
+
+          .form-container
+            = render 'flashes'
+
+            = yield
+
+= render template: 'layouts/application'

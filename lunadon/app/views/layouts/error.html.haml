@@ -1,0 +1,44 @@
+!!!
+%html{ lang: I18n.locale }
+  %head
+    %meta{ content: 'text/html; charset=UTF-8', 'http-equiv' => 'Content-Type' }/
+    %meta{ charset: 'utf-8' }/
+    %title= "Error " + "500" + " - " + safe_join([yield(:page_title), Setting.default_settings['site_title']], ' - ')
+    %meta{ content: 'width=device-width,initial-scale=1', name: 'viewport' }/
+    %link{ rel: "stylesheet", href: "/alt/error.css" }
+  %body
+    .container
+      .errorTextContainer
+        %p
+          A problem has been detected and Mastodon has been shut down
+          to prevent damage.
+        
+        %h1.errorDetails
+          %p= "Error "
+          %p.errorNumber= yield :error_number
+          %p.errorSeparator= "-"
+          %p= yield :content
+
+        %p
+          If this is the first time you've seen this error screen,
+          try refreshing the page. If this screen appears again, try
+          refreshing again.
+
+        %p
+          If problems continue, please file a bug report to the
+          maintainers at the source code repository. The repository is
+          available at this URL:
+          %a{ href: "https://github.com/assemblylanguage/lunadon" }
+            https://github.com/assemblylanguage/lunadon.
+        
+        %p
+          Unrelated Technical Information:
+        
+        .technicalInformation
+          *** STOP: 0x000000D1 (0x00000000, 0x00000000)
+
+        .technicalInformation
+          *** CALL: 0x000000D1 (0x00000000, 0x00000000)
+
+        .technicalInformation
+          *** JUMP: 0x000000D1 (0x00000000, 0x00000000)

@@ -1,0 +1,138 @@
+/*
+ * Styles rendered on SSR routes except the home page.
+ */
+.header {
+  height: unset !important;
+  margin: 0px !important;
+  box-shadow: inset 0px -1px #ffffff, inset 0px -2px #aca899,
+    inset 0px -3px #ffffff !important;
+  padding-bottom: 3px !important;
+}
+
+.brand svg {
+  display: none !important;
+}
+
+.brand::before {
+  content: "Home";
+  font-size: 12px !important;
+}
+
+.nav-left,
+.nav-center {
+  flex: unset !important;
+}
+
+.nav-right {
+  justify-content: unset !important;
+}
+
+.nav-left a,
+.nav-center a,
+.nav-right a {
+  margin: 0px !important;
+  padding: 0px !important;
+  background: unset !important;
+  padding-left: 8px !important;
+  padding-right: 8px !important;
+  padding-top: 4px !important;
+  padding-bottom: 4px !important;
+  text-decoration: none !important;
+  color: #000000 !important;
+  font-weight: normal !important;
+  border-radius: 0px !important;
+}
+
+.nav-left a:first-letter,
+.nav-center a:first-letter,
+.nav-right a:first-letter {
+  text-decoration: underline !important;
+}
+
+.nav-left a:hover,
+.nav-center a:hover,
+.nav-right a:hover {
+  color: #ffffff !important;
+  background-color: #3169c6 !important;
+}
+
+.box-widget .rich-formatting * {
+  color: #000000 !important;
+}
+
+.box-widget .rich-formatting em {
+  font-weight: bold !important;
+  font-style: unset !important;
+}
+
+.box-widget .rich-formatting a {
+  color: #0000ff !important;
+}
+
+.box-widget,
+.hero-widget {
+  box-shadow: unset !important;
+}
+
+.container:nth-of-type(2) .hero-widget {
+  border-left: 1px solid #716f64 !important;
+  border-bottom: 1px solid #716f64 !important;
+}
+
+.container:nth-of-type(2) .grid {
+  background-color: #ece9d8 !important;
+}
+
+.regeneration-indicator {
+  background: unset !important;
+}
+
+.nothing-here,
+.public-account-header.public-account-header--no-bar,
+.public-account-header * {
+  box-shadow: unset !important;
+}
+
+.public-account-header__image img {
+  border-radius: 0px !important;
+}
+
+.public-layout .container:first-child {
+  padding: 0px !important;
+  margin-top: 8px !important;
+}
+
+.public-layout .container:nth-child(n + 2) {
+  padding: 0px 4px !important;
+  box-shadow: inset 1px 0px #0019cf, inset -1px 0px #0019cf,
+    inset 2px 0px #0734da, inset -2px 0px #0734da, inset 3px 0px #166aee,
+    inset -3px 0px #166aee, inset 4px 0px #0855dd, inset -4px 0px #0855dd;
+  background-color: #ece9d8 !important;
+}
+
+.public-layout .container:nth-last-child(2) {
+  padding-bottom: 4px !important;
+  box-shadow: inset 1px 0px #0019cf, inset -1px -1px #0019cf,
+    inset 2px 0px #0734da, inset -2px -2px #0734da, inset 3px 0px #166aee,
+    inset -3px -3px #166aee, inset 4px 0px #0855dd, inset -4px -4px #0855dd;
+}
+
+.public-layout .container:last-child {
+  box-shadow: unset !important;
+  background-color: unset !important;
+}
+
+.page-header {
+  margin: 0px !important;
+  box-shadow: unset !important;
+}
+
+.hero-widget {
+  border-top: 1px solid #716f64 !important;
+  border-left: 1px solid #716f64 !important;
+  border-bottom: 1px solid #716f64 !important;
+}
+
+.detailed-status.detailed-status-public.compact {
+  background-color: unset !important;
+}
