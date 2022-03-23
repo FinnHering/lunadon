@@ -1236,10 +1236,6 @@ a.status__display-name > span.display-name {
   font-weight: bold !important;
 }
 
-.windowBody .tabs-bar__wrapper ~ .columns-area.columns-area--mobile {
-  height: 100vh !important;
-}
-
 .drawer__inner__mastodon {
   background: unset !important;
 }
@@ -1343,6 +1339,21 @@ a.status-card .status-card__content * {
 
 .account__header__content {
   color: #000000 !important;
+}
+
+.sidebar__toggle__logo:active,
+.sidebar__toggle__logo:focus,
+.sidebar__toggle__logo a:active,
+.sidebar__toggle__logo a:focus {
+  background: unset !important;
+}
+
+[viewBox="0 0 713.35878 175.8678"]#mastodon-svg-logo-full path:first-of-type {
+  display: none !important;
+}
+
+[viewBox="0 0 713.35878 175.8678"]#mastodon-svg-logo-full path:last-of-type {
+  fill: #0000ff !important;
 }
 
 /* Windows */
