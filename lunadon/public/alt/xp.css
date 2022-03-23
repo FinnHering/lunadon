@@ -1335,6 +1335,16 @@ a.status-card .status-card__content * {
   margin-top: -2px !important;
 }
 
+.directory__card__img,
+.directory__card__bar,
+.directory__card__extra {
+  background: unset !important
+}
+
+.account__header__content {
+  color: #000000 !important;
+}
+
 /* Windows */
 .columns-area__panels__main .window {
   width: 580px !important;
