@@ -1275,6 +1275,66 @@ a.status-card .status-card__content * {
   background-color: #ebebeb !important;
 }
 
+.spoiler-button .icon-button {
+  width: 30px !important;
+  height: 30px !important;
+  margin-left: 4px !important;
+  margin-top: 4px !important;
+}
+
+.status-card,.status-card__image,.status-card__image-image,
+.media-gallery, .media-gallery__item {
+  border-radius: 0px !important;
+}
+
+.status-card,
+.media-gallery {
+  margin-top: 0px !important;
+  padding: 6px !important;
+  background-color: #ffffff !important;
+  box-shadow: 
+    inset -1px 0px #ffffff, 
+    inset 0px -1px #ffffff, 
+    inset 1px 0px #aca899,
+    inset -2px 0px #ece9d8, 
+    inset 0px -2px #ece9d8, 
+    inset 2px 0px #000000
+    !important;
+}
+
+.status-card__image-image {
+  width: 100% !important;
+}
+
+.spoiler-button__overlay__label {
+  background-color: unset !important;
+}
+
+.status-card__actions button {
+  height: 30px !important;
+  width: 40px !important;
+}
+
+.notification:focus {
+  background-color: unset !important;
+}
+
+.status__avatar {
+  opacity: 1.0 !important;
+}
+
+.notification:hover {
+  background-color: #e2decd !important;
+}
+
+.media-gallery {
+  margin-top: -2px !important;
+}
+
+.status-card {
+  margin-top: -2px !important;
+}
+
 /* Windows */
 .columns-area__panels__main .window {
   width: 580px !important;
@@ -1288,8 +1348,13 @@ a.status-card .status-card__content * {
 }
 
 /* Icons */
+.status-card__image .fa-external-link {
+  color: #ffffff !important;
+}
+
 .detailed-status__action-bar .fa-reply::before,
-.status__action-bar .fa-reply::before {
+.status__action-bar .fa-reply::before,
+.status__action-bar .fa-reply-all::before {
   color: #088d04 !important;
 }
 
