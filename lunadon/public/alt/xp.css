@@ -27,6 +27,7 @@ html {
 body {
   background-image: url("/alt/bliss.jpeg") !important;
   background-attachment: fixed !important;
+  background-size: cover;
 }
 
 a,
