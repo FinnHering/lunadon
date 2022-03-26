@@ -1362,10 +1362,20 @@ a.status-card .status-card__content * {
 }
 
 @media screen and (max-width: 600px) {
-  .window,
-  .windowBody {
-    max-width: 90vw !important;
+  .window, .windowContainer {
+    max-width: 90vw;
   }
+
+  .windowContainer {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  #headerLogoAlt, #headerLogo {
+    max-width: min(100%, 350px) !important;
+    box-sizing: border-box;
+  }
+
 }
 
 /* Icons */
