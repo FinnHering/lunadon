@@ -1364,7 +1364,7 @@ a.status-card .status-card__content * {
 
 @media screen and (max-width: 600px) {
   .window, .windowContainer {
-    max-width: 90vw;
+    max-width: 90vw !important;
   }
 
   .windowContainer {
